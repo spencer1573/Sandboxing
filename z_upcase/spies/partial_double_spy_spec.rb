@@ -24,12 +24,5 @@ Rspec.describe "failure when the message has not been received" do
 	# an understanding of what it does
 	example "for a spy" do
 
-<<<<<<< HEAD
-Rspec.describe "failure when the message has not been received" do
-
-
-end
-=======
 end
 =end
->>>>>>> upcase-spies
