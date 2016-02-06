@@ -18,8 +18,18 @@ RSpec.describe "have_recieved" do
 		expect(Invitation).to have_received(:pulle)
 	end
 end
+=begin
+Rspec.describe "failure when the message has not been received" do
+	# you were just looking up example keyword to get
+	# an understanding of what it does
+	example "for a spy" do
 
+<<<<<<< HEAD
 Rspec.describe "failure when the message has not been received" do
 
 
 end
+=======
+end
+=end
+>>>>>>> upcase-spies
