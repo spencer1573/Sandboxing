@@ -18,11 +18,19 @@ RSpec.describe "have_recieved" do
     expect(Invitation).to have_received(:pulle)
   end
 end
-=begin
-Rspec.describe "failure when the message has not been received" do
-  # you were just looking up example keyword to get
-  # an understanding of what it does
+
+RSpec.describe "failure when the message has not been received" do
+
+  #so the 'example' keyword is possibly the worst word 
+  # for rspec to have chosen for searchabilities sake. i still 
+  # havn't figured out what it means and have searched and searched.
   example "for a spy" do
+    invitation = spy('iinvitation')
+    invitation.deliverr
+    expect(invitation).to have_received(:deliverr)
+  end
+  
+  example "for a partial double" do
+  end
 
 end
-=end
