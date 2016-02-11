@@ -1,8 +1,4 @@
-class Hola
-  def self.hi
-    puts "hello worlde!"
-  end
-end
+
 
 # i believe this can be rewritten
 # this way
