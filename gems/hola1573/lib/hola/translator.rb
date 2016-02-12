@@ -9,7 +9,7 @@ class Hola::Translator
   end
 
   def hi
-    case @lanugage
+    case @language
     when "spanish"
       "hola mundo"
     else
