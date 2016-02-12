@@ -34,20 +34,11 @@ RSpec.describe "failure when the message has not been received" do
   
   example "testing for another thing" do 
     invitation = String.new
-<<<<<<< HEAD
-    allow(invitation).to receive(:deliverrr)
-    invitation.deliverrr
-    expect(invitation).to have_received(:deliverrr)
-  end
-  
-  example "for a partial double" do
-=======
     # apparently this defines a 'hollow' method for the object
     # without allow, to receive you get an error message
     allow(invitation).to receive(:deliverrr)
     invitation.deliverrr
     expect(invitation).to have_received(:deliverrr)
->>>>>>> tall-yew
   end
   
 end
