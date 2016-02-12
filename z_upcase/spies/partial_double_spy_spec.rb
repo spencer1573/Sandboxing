@@ -30,6 +30,13 @@ RSpec.describe "failure when the message has not been received" do
     expect(invitation).to have_received(:deliverr)
   end
   
+  example "testing for another thing" do 
+    invitation = String.new
+    allow(invitation).to receive(:deliverrr)
+    invitation.deliverrr
+    expect(invitation).to have_received(:deliverrr)
+  end
+  
   example "for a partial double" do
   end
 
