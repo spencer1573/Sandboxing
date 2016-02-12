@@ -1,23 +1,8 @@
 class Hola
-  def self.hi
-    puts "hello worlde!"
+  def self.hi(language = "english")
+    translator = Translator.new(language)
+    translator.hi
   end
 end
 
-# i believe this can be rewritten
-# this way
-# class Hola.Translator
-class Hola::Translator
-  def initialize(language)
-    @language = language
-  end
-
-  def hi
-    case @lanugage
-    when "spanish"
-      "hola mundo"
-    else
-      "hello world"
-    end
-  end
-end
+require 'hola/translator'
