@@ -46,21 +46,36 @@ end
 RSpec.describe "An invitation" do
 end
 
-$count = 0
+something_count = 0
 #understanding let
+# so let is interesting in this case
+# it remembers if you call count once
+# but it only counts it once per example
+# so it does the same things no matter how
+# many times you call it within an example
+# but the second you start a new example and call it
+# it evaluates something_count += 1 and makes that
+# equal to count?
 RSpec.describe "let" do
-  let(:count) { $count += 1 }
+  let(:count) { something_count += 1 }
 
-  it "memorizes the value" do
-    expect(count).to eq(1)
-    expect(count).to eq(1)
-    $count = $count + 3
-    expect($count).to eq(4)
+  it "memoizes the value" do
+    #expect(count).to eq(1)
+    #expect(count).to eq(1)
+    #expect(count).to eq(1)
   end
   
   it "is not cached across examples" do
-    expect($count).to eq(2)
+    #count
+    #expect(count).to eq(1)
   end
+
+  it "counts to three?" do 
+    expect(count).to eq(1)
+  end
+  
+
 end
+
 
 
