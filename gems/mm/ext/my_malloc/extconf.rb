@@ -8,6 +8,7 @@ require 'mkmf'
 abort "missing malloc()" unless have_func "malloc"
 abort "missing free()"   unless have_func "free"
 
+# still a little fuzzy how the makefile works
 create_makefile "my_malloc/my_malloc"
 
 
