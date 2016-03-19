@@ -18,3 +18,11 @@ set expandtab
 set smarttab
 
 set smartindent
+
+" this is how you do the sensible configuration
+" mkdir -p ~/.vim/plugin
+" curl https://raw.githubusercontent.com/tpope/vim-sensible/master/plugin/sensible.vim > ~/.vim/plugin/sensible.vim
+
+
+
+
