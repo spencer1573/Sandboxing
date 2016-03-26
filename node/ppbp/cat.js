@@ -26,3 +26,19 @@ module.exports = function(app) {
         );
     });
 
+    /* Update */
+    app.put('/cat/:id', function (req, res) {
+        var index = _.findIndex(
+            _cats,
+            {
+                name: req.params.id
+            }
+        );
+        _.merge(_cats[index], req.body);
+        res.json({info: 'cat updated successfully'});
+    });
+
+    /* Delete */
+    app.delete('/cat/:id', function (req, res) {
+        
+
