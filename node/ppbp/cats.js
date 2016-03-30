@@ -2,16 +2,11 @@ var _ = require('lodash');
 
 module.exports = function(app) {
 
-<<<<<<< HEAD
-=======
-
     /*
      * you can use curl requests to send json! wow!
      * but postman seems easy enough and it checkes for your mistakes and everything
     */
 
-
->>>>>>> tall-yew
     /************
     this is a cats array
     #QUESTION:
