@@ -4,6 +4,13 @@ var app = express();
 
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+/*
+ * the mongodb at the beginning of local host
+ * is enforcing a protocol
+ */
+mongoose.connect('mongodb://localhost/cats');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
