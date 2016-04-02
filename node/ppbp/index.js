@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-var cats = require('./cats.js')(app);
+var cats = require('./cat_routes.js')(app);
 
 /*
 app.get('/', function (req, res) {
