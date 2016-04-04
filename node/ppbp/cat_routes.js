@@ -33,8 +33,9 @@ module.exports = function(app) {
         });
     });
 
-    /* Update */
-    app.put('cat/:id', function (req, res) {
+    /* UPDATE 
+    was missing a slash! so none of update worked! */
+    app.put('/cat/:id', function (req, res) {
         Cat.findById(req.params.id, function(err, cat) {
             if (err) {
                 res.json({info: 'error during find cat', error: err});
