@@ -21,6 +21,7 @@ module.exports = function(app) {
                 res.json({info: 'error during find dogs', error: err});
             };
             res.json({info: 'dogs found successfully', data: dogs});
+                        
         });
     });
 
