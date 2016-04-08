@@ -47,6 +47,11 @@ module.exports = function(app) {
         
     });
 
+    //#QUESTION: Date.getTime() or Date.getHours() is not working... why is this?
+    app.get('/ping', function (req, res) {
+        res.json({pong: Date.now()});
+    });
+    
 };
 
 
