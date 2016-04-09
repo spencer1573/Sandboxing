@@ -3,6 +3,11 @@ var r = require('request').defaults({
 });
 
 var async = require('async');
+var redis = require('redis');
+//* obviously you would use env_variables instead of the 
+//actual port and everything because its dangerous to 
+//put your information like that in the app
+var client = redis.createClient(6379, '127.0.0.1');
 
 module.exports = function(app) { 
 

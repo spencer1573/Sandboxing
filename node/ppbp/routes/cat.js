@@ -29,7 +29,14 @@ module.exports = function(app) {
             if (err) {
                 res.json({info: 'error during find cat', error: error});
             };
-            res.json({info: 'cats found successfully', data: cat});
+            if (cat) {
+                //res.json({info: 'cat found successfully', data: cat});
+                setTimeout(function(){
+                    res.json({info: 'cat found successfully', data: cat});
+                }, 10000);
+            } else {
+                res.json({info: 'cat not found'});
+            }
         });
     });
 
