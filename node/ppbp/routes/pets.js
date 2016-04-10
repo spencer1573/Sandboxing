@@ -29,6 +29,12 @@ module.exports = function(app) {
                 });
             },
             dog: function(callback){
+                /*
+                 * redis request
+                 ********************************************************/
+                client.get('http://localhost:3001/dog', function(error, cat) {
+// follow along at 10:45
+                /*
                 r({uri: 'http://localhost:3001/dog'}, function(error, response, body) {
                     if (error) {
                         callback({service: 'dog', error: error});
@@ -40,6 +46,7 @@ module.exports = function(app) {
                         callback(response.statusCode)
                     }
                 });
+                */
             }
         },
         function(error, results) {
