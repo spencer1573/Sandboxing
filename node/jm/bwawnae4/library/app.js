@@ -1,5 +1,7 @@
 var express = require('express');
 
-var hi = "hello"; 
+// this is an instance of express
+var app = express();
 
-console.log(hi);
+var port = 
+app.listen();
