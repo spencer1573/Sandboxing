@@ -5,7 +5,7 @@ var app = express();
 
 var port = 5000;
 // the function is a callback that executes after it listens on port 5000
-app.listen(5000, function(err){
-
+app.listen(port, function(err){
+    console.log('running server on port ' + port);
 });
 
