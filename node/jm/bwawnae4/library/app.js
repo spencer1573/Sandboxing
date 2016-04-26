@@ -3,6 +3,11 @@ var express = require('express');
 // this is an instance of express
 var app = express();
 
+// he said something about app.use
+// it loads all the directories and everything in that directory you specify
+// there is great documentation here and some really good examples:
+// http://expressjs.com/en/api.html
+app.use(express.static('public'));
 app.get('/', function(req, res){
     res.send('hello world')
 });
