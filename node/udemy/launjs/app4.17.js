@@ -17,3 +17,17 @@ function logGreeting(fn) {
 // this makes so much more sense about so many things!
 // i'm so glad i bought this udemy course
 logGreeting(greet);
+
+// you can set a function as the value of a variable in a 
+// 'function expression' note here that the function has no name
+// its passed as 'greetMe' and evaluated when 'greetMe()' is called
+//
+// function expression
+var greetMe = function() {
+    console.log('hi tony')
+}
+
+greetMe();
+
+// it's first-class
+logGreeting(greetMe);

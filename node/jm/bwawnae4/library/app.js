@@ -8,6 +8,9 @@ var app = express();
 // there is great documentation here and some really good examples:
 // http://expressjs.com/en/api.html
 app.use(express.static('public'));
+
+app.use(express.static('src/views'));
+
 app.get('/', function(req, res){
     res.send('hello world')
 });
