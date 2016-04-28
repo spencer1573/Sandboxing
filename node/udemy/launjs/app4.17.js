@@ -31,3 +31,16 @@ greetMe();
 
 // it's first-class
 logGreeting(greetMe);
+
+//this is also something huge! all of these are amazing and 
+//i wish i had learned them before because they make everything make
+//sense ... structurally
+//
+// use a function epxression 'on the fly'
+logGreeting(function() {
+    console.log('Hello Tony!');
+});
+
+
+
+
