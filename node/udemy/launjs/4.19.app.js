@@ -9,3 +9,7 @@ var person = {
 // this is how you call that greet function in that name value pair
 // or object or whatever that is.
 person.greet();
+
+// this is how you acces the firstname property
+console.log(person['firstname']);
+
