@@ -35,4 +35,5 @@ set smartindent
 " https://github.com/Shutnik/jshint2.vim
 set runtimepath+=~/.vim/bundle/jshint2.vim/
 
+set clipboard=unnamed
 
