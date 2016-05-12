@@ -15,6 +15,8 @@ let g:syntastic_javascript_checkers = ['jscs']
 
 :syntax on
 
+autocmd vimenter * NERDTree              "automatically starts up nerdtree when vim starts up
+
 set number
 
 "function! NumberToggle()
