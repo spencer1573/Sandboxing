@@ -11,7 +11,14 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jscs']
+" these are the custom things for syntastic
+
+let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+"this lets you do both jshint and jscs maybe
+"autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
+
+"this lets you aggregate multiple style checkers
+let g:syntastic_aggregate_errors = 1
 
 :syntax on
 
