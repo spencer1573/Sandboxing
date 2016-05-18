@@ -21,8 +21,11 @@ let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 let g:syntastic_aggregate_errors = 1
 
 :syntax on
+syntax enable
+"colorscheme lucario
 
-autocmd vimenter * NERDTree              "automatically starts up nerdtree when vim starts up
+
+"autocmd vimenter * NERDTree              "automatically starts up nerdtree when vim starts up
 
 set number
 
