@@ -6,13 +6,10 @@ var jscs = require('gulp-jscs');
 
 var jsFiles = ['*.js', 'src/**/*.js'];
 
-// to get gulp to work in the command line you need to remember to 
+// to get gulp to work in the command line you need to remember to
 // install gulp cl tools
 // by:
 // npm install -g gulp-cli
-//
-// you are at 6:20 in the video right now
-//
 gulp.task('style', function() {
     return gulp.src(jsFiles)
         .pipe(jshint())
@@ -20,4 +17,4 @@ gulp.task('style', function() {
             verbose: true
         }))
         .pipe(jscs());
-})
+});
