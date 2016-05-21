@@ -13,7 +13,7 @@ let g:syntastic_check_on_wq = 0
 
 " these are the custom things for syntastic
 
-let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+let g:syntastic_javascript_checkers = ['jshint']
 "this lets you do both jshint and jscs maybe
 "autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
 
@@ -22,7 +22,15 @@ let g:syntastic_aggregate_errors = 1
 
 :syntax on
 syntax enable
+:set paste
+:filetype on
+
+autocmd BufNewFile,BufRead *.json setfiletype json
 "colorscheme lucario
+"set t_Co=257
+"hi SpellBad ctermfg=093 ctermbg=155 guifg=#8700ff guibg=#afff5f
+"hi SpellCap ctermfg=093 ctermbg=155 guifg=#8700ff guibg=#afff5f
+
 
 
 "autocmd vimenter * NERDTree              "automatically starts up nerdtree when vim starts up
@@ -48,6 +56,7 @@ autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
 autocmd Filetype sass setlocal ts=2 sts=2 sw=2
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
+autocmd Filetype json setlocal ts=2 sts=2 sw=2
 
 set expandtab
 
