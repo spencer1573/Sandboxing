@@ -25,9 +25,13 @@ syntax enable
 :set paste
 :filetype on
 
+
 autocmd BufNewFile,BufRead *.json setfiletype json
-"colorscheme lucario
-"set t_Co=257
+autocmd BufNewFile,BufRead *.ts setfiletype typscript 
+
+"set background=dark
+"colorscheme one
+"set t_Co=256
 "hi SpellBad ctermfg=093 ctermbg=155 guifg=#8700ff guibg=#afff5f
 "hi SpellCap ctermfg=093 ctermbg=155 guifg=#8700ff guibg=#afff5f
 
@@ -47,12 +51,12 @@ set number
 
 ":call NumberToggle()
 
-set relativenumber                      " i'm pretty sure this line works in linux, but not mac
-set number
+set relativenumber                      " vi is different than vim. never use vi again! 
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+autocmd Filetype typescript setlocal ts=4 sts=4 sw=4
 autocmd Filetype sass setlocal ts=2 sts=2 sw=2
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
