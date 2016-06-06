@@ -1,4 +1,3 @@
-
 /**
  * System configuration for Angular 2 samples
  * Adjust as necessary for your application needs.
@@ -35,7 +34,7 @@
   // Bundled (~40 requests):
   function packUmd(pkgName) {
     packages['@angular/'+pkgName] = { main: pkgName + '.umd.js', defaultExtension: 'js' };
-  };
+  }
   // Most environments should use UMD; some (Karma) need the individual index files
   var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
   // Add package entries for angular packages
@@ -43,6 +42,6 @@
   var config = {
     map: map,
     packages: packages
-  }
+  };
   System.config(config);
 })(this);
