@@ -12,6 +12,7 @@
     "typescript": "^1.8.10"
   },
   "devDependencies": {
+    "grunt-cli": "^1.2.0",
     "minifier": "^0.7.1",
     "typings": "^1.0.4"
   }
