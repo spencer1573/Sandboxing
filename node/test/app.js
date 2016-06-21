@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 
 // use app.router before express.static
-app.use(app.router);
+//depreciated in express 4.0
+//app.use(app.router);
+app.use(express.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 function userIsAllowed(callback) {
@@ -13,7 +15,7 @@ function userIsAllowed(callback) {
   // about whether or not the user is allowed to see files in the
   // protected directory; here, we'll use a default value of "false"
   callback(false);
-};
+}
 
 app.get('/', function(req, res, next) {
   res.end('Home page');
