@@ -18,15 +18,30 @@ function removeDups(dup_array) {
   //automatically be in order
   dup_array = dup_array.sort();
   
-  result_array = [];
     
+  var result_array = [];
+
   for(var i = 0; i < dup_array.length; i++) {
-    console.log(dup_array[i]);
-    
-    
+
+    //console.log(dup_array[i]);
+
+    if (result_array.includes(dup_array[i])) {
+      //do nothing 
+    } else {
+      result_array.push(dup_array[i]);      
+    }
+      
   }
   
+  console.log(result_array);
+
+  return result_array;
 
 }
 
 removeDups([1,3,3,3,1,5,6,7,8,1]);
+
+
+
+
+
