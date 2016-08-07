@@ -9,6 +9,10 @@ Check to see if the number passed into your function is prime or not.  77 is not
 
 function checkifPrime(number) {
 
+  if (number > 1) { 
+    
+      
+  } 
 }
 
 checkifPrime(77);
