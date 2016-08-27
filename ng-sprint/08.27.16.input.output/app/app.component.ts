@@ -5,13 +5,7 @@ import { CharactersComponent } from './characters.component';
 
 @Component({
   selector: 'story-app',
-  template: `
-  <div>
-    <h1>Storyline Tracker</h1>
-    <h3>Component Demo</h3>
-    <story-characters [storyId]="7" (changed)=changed($event)></story-characters>
-  </div>
-  `,
+  template: '.app/app.component.html',
   directives: [CharactersComponent],
   providers: [HTTP_PROVIDERS]
 })
