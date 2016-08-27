@@ -14,9 +14,13 @@ import { Vehicle, VehicleService } from './vehicle.service';
   providers: [FilterService]
 })
 export class VehicleListComponent implements OnDestroy, OnInit {
+  
+  //this is a field
   private _dbResetSubscription: Subscription;
 
+  //this is a field
   vehicles: Vehicle[];
+  //this is a field
   filteredVehicles = this.vehicles;
   @ViewChild(FilterTextComponent) filterComponent: FilterTextComponent;
 
