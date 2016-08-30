@@ -14,13 +14,14 @@ import { Vehicle, VehicleService } from './vehicle.service';
   providers: [FilterService]
 })
 export class VehicleListComponent implements OnDestroy, OnInit {
-  
+
   //this is a field
   private _dbResetSubscription: Subscription;
 
   //this is a field
   vehicles: Vehicle[];
-  //this is a field
+  // this a is a field even though it doesn't have a
+  // semicolon, this.vehicles refers to the field above.
   filteredVehicles = this.vehicles;
   @ViewChild(FilterTextComponent) filterComponent: FilterTextComponent;
 
@@ -28,10 +29,12 @@ export class VehicleListComponent implements OnDestroy, OnInit {
     private _filterService: FilterService,
     private _vehicleService: VehicleService) { }
 
+  //this is a method
   filterChanged(searchText: string) {
     this.filteredVehicles = this._filterService.filter(searchText, ['id', 'name', 'type'], this.vehicles);
   }
 
+  //this is a method
   getVehicles() {
     this.vehicles = [];
     this._vehicleService.getVehicles()
@@ -41,10 +44,12 @@ export class VehicleListComponent implements OnDestroy, OnInit {
       });
   }
 
+  //this is a method
   ngOnDestroy() {
     this._dbResetSubscription.unsubscribe();
   }
 
+  //this is a method
   ngOnInit() {
     componentHandler.upgradeDom();
     this.getVehicles();
