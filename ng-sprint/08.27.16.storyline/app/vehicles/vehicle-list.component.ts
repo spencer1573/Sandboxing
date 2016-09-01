@@ -17,6 +17,8 @@ import { Vehicle, VehicleService } from './vehicle.service';
 export class VehicleListComponent implements OnDestroy, OnInit {
 
   //this is a field
+  // when there is an underscore that is just a common naming convention
+  // for a private varaible
   private _dbResetSubscription: Subscription;
 
   //this is a field
