@@ -13,6 +13,7 @@ import { Vehicle, VehicleService } from './vehicle.service';
   pipes: [InitCapsPipe],
   providers: [FilterService]
 })
+// OnDestroy, and OnInit are interfaces
 export class VehicleListComponent implements OnDestroy, OnInit {
 
   //this is a field
