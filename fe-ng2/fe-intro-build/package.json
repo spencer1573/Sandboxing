@@ -7,7 +7,8 @@
     "awesome-typescript-loader": "^2.2.4"
   },
   "devDependencies": {
-    "typescript": "^1.8.10"
+    "typescript": "^2.1.0-dev.20160910",
+    "webpack": "^2.1.0-beta.22"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
