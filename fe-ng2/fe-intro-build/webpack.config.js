@@ -4,6 +4,7 @@ module.exports = {
     entry: './app/root.ts',
     resolve: {
       extensions: ['', '.ts', '.js']
+
   },
 
   output: {
