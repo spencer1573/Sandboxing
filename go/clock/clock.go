@@ -28,13 +28,10 @@ func printTime(hour int, min int) int{
         return 0
 }
 */
-func clockInit() int {
-        p := fmt.Println
+func clockInit() time.Time {
         clock := time.Date(
                 2009, 11, 17, 20, 34, 58, 651387237, time.UTC)
-        p(clock)
-        //return clock
-        return 5
+        return clock
 }
 
 func menu() {
@@ -48,9 +45,14 @@ func main() {
         fmt.Printf("\nThis Program adds minutes and hours to clock\n\n")
         fmt.Printf("These are your options:\n\n")
         menu()
+
         //var hour int = 9
         //var min int = 0
-        clockInit()
+
+        p := fmt.Println
+        var clockA time.Time = clockInit()
+        p(clockA)
+
         //printTime(hour, min)
         /*
         n, err := fmt.Scanf("%d\n", &year)
