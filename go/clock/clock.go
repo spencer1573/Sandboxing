@@ -5,9 +5,6 @@ import (
         "time"
 )
 
-func addHour() {
-        
-}
 /*
 func addZeros(time int) {
         fmt.Printf("%d \n", )
@@ -28,6 +25,11 @@ func printTime(hour int, min int) int{
         return 0
 }
 */
+
+func addHour(clockA time.Time) time.Time {
+        return clockA.Add( 1 * time.Hour )
+}
+
 func clockInit() time.Time {
         clock := time.Date(
                 2009, 11, 17, 20, 34, 58, 651387237, time.UTC)
@@ -51,6 +53,8 @@ func main() {
 
         p := fmt.Println
         var clockA time.Time = clockInit()
+        p(clockA)
+        clockA = addHour(clockA)
         p(clockA)
 
         //printTime(hour, min)
