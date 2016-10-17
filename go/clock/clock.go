@@ -28,14 +28,13 @@ func printTime(hour int, min int) int{
 
 func addHour(clockA time.Time) time.Time {
         fmt.Printf("how many hours do you want to add?")
-        var hour int = 0
+        var hour int = 1
         hour, err := fmt.Scanf("%d\n", &hour)
         if err != nil || hour != 1 {
             // handle invalid input
                 fmt.Println(hour, err)
         }
-        
-        return clockA.Add( time.Duration(hour) * time.Hour )
+        return clockA.Add( hour * time.Hour )
 }
 
 func clockInit() time.Time {
