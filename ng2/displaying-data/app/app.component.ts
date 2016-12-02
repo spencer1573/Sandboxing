@@ -26,7 +26,7 @@ export class AppComponent {
       this.heroes = [
         new Hero(1, 'windstorm'),
         new Hero(13, 'Bombasto'),
-        new Hero(15, 'Magenta'),
+    //    new Hero(15, 'Magenta'),
         new Hero(20, 'Tornado'),
         new Hero(21, 'Wolverine'),
         new Hero(21, 'Charles xavior'),
