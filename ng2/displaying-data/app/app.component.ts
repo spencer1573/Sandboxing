@@ -12,6 +12,8 @@ import { Hero } from './hero';
         </li>
       <ol>
       <p *ngIf="heroes.length > 3">there are many heroes!</p>
+      <button (click)="onClickMe()">Click me!</button>
+      {{clickMessage}}
     `
 })
 export class AppComponent {
@@ -19,6 +21,7 @@ export class AppComponent {
     myHero: string;
     //heroes: Array<number|string> = [];
     heroes: Array<Object> = [];
+    clickMessage: string = '';
 
     constructor() {
       this.title = 'Tour of Heroes';
@@ -34,5 +37,9 @@ export class AppComponent {
       ];
       this.myHero = this.heroes[Object.keys(this.heroes)[0]];
 
+    }
+
+    onClickMe() {
+      this.clickMessage = 'You are my hero!';
     }
 }
